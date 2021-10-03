@@ -1,6 +1,6 @@
 # Simple blockchain in Rust
 
-A naive blockchain implementation in Rust.
+A naive blockchain implementation with PoW in Rust.
 
 # Content
 - [Support](#support)
