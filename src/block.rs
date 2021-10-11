@@ -1,5 +1,5 @@
-use std::fmt::{ self, Debug, Formatter };
 use super::*;
+use std::fmt::{self, Debug, Formatter};
 
 pub struct Block {
     pub index: u32,
@@ -12,8 +12,10 @@ pub struct Block {
 }
 
 impl Debug for Block {
-    fn fmt (&self, f: &mut Formatter) -> fmt::Result {
-        write!(f, "Block[{}]: {} at: {} with: {} nonce: {}",
+    fn fmt(&self, f: &mut Formatter) -> fmt::Result {
+        write!(
+            f,
+            "Block[{}]: {} at: {} with: {} nonce: {}",
             &self.index,
             &hex::encode(&self.hash),
             &self.timestamp,
@@ -24,7 +26,13 @@ impl Debug for Block {
 }
 
 impl Block {
-    pub fn new (index: u32, timestamp: u128, prev_block_hash: Hash, transactions: Vec<Transaction>, difficulty: u128) -> Self {
+    pub fn new(
+        index: u32,
+        timestamp: u128,
+        prev_block_hash: Hash,
+        transactions: Vec<Transaction>,
+        difficulty: u128,
+    ) -> Self {
         Block {
             index,
             timestamp,
@@ -36,7 +44,7 @@ impl Block {
         }
     }
 
-    pub fn mine (&mut self) {
+    pub fn mine(&mut self) {
         for nonce_attempt in 0..(u64::max_value()) {
             self.nonce = nonce_attempt;
             let hash = self.hash();
@@ -49,7 +57,7 @@ impl Block {
 }
 
 impl Hashable for Block {
-    fn bytes (&self) -> Vec<u8> {
+    fn bytes(&self) -> Vec<u8> {
         let mut bytes = vec![];
 
         bytes.extend(&u32_bytes(&self.index));
@@ -60,7 +68,7 @@ impl Hashable for Block {
             self.transactions
                 .iter()
                 .flat_map(|transaction| transaction.bytes())
-                .collect::<Vec<u8>>()
+                .collect::<Vec<u8>>(),
         );
         bytes.extend(&u128_bytes(&self.difficulty));
 
@@ -68,6 +76,6 @@ impl Hashable for Block {
     }
 }
 
-pub fn check_difficulty (hash: &Hash, difficulty: u128) -> bool {
-    difficulty > difficulty_bytes_as_u128(&hash)
+pub fn check_difficulty(hash: &Hash, difficulty: u128) -> bool {
+    difficulty > difficulty_bytes_as_u128(hash)
 }
