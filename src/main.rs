@@ -29,7 +29,7 @@ fn main() {
 
     let last_hash = genesis_block.hash.clone();
 
-    let mut blockchain = Blockchain::new();
+    let mut blockchain = Blockchain::default();
 
     blockchain
         .update_with_block(genesis_block)
