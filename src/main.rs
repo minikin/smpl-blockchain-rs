@@ -1,4 +1,4 @@
-use blockchainlib::*;
+use blockchain::*;
 
 fn main() {
     let difficulty = 0x000fffffffffffffffffffffffffffff;

@@ -8,11 +8,11 @@ readme = "README.md"
 exclude = ["assets"]
 
 [lib]
-name = "blockchainlib"
+name = "blockchain"
 path = "src/lib.rs"
 
 [[bin]]
-name = "blockchain"
+name = "example"
 path = "src/main.rs"
 
 [dependencies]
