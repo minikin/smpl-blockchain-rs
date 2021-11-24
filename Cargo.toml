@@ -1,8 +1,11 @@
 [package]
 name = "smpl-blockchain-rs"
 version = "0.1.0"
+edition = "2021"
 authors = ["Sasha Prokhorenko <warbles.lieu_04@icloud.com>"]
-edition = "2018"
+repository = "https://github.com/minikin/smpl-blockchain-rs"
+readme = "README.md"
+exclude = ["assets"]
 
 [lib]
 name = "blockchainlib"
