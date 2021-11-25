@@ -1,5 +1,3 @@
-
-
 <h1 align="center">Blockchain in Rust</h1>
 
 <p align="center">
