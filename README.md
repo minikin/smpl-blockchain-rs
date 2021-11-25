@@ -1,15 +1,32 @@
-# Blockchain in Rust
+
+
+<h1 align="center">Blockchain in Rust</h1>
+
+<p align="center">
+  <a href="https://github.com/minikin/smpl-blockchain-rs">
+    <img src="https://i.ibb.co/VLfnJrY/github.png" alt="Blockchain in Rust" />
+  </a>
+<h2 align="center">Naive blockchain implementation with PoW in Rust.</h2>
+</p>
 
 [![Licensed under either of Apache License, Version 2.0 or MIT license at your option.](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/minikin/smpl-blockchain-rs/blob/main/LICENSE-MIT)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/minikin/smpl-blockchain-rs/blob/main/CODE_OF_CONDUCT.md)
 [![Rust](https://github.com/minikin/smpl-blockchain-rs/actions/workflows/rust.yml/badge.svg)](https://github.com/minikin/smpl-blockchain-rs/actions/workflows/rust.yml)
 
-Naive blockchain implementation with PoW in Rust.
 
 # Content
 
+- [Features](#features)
+- [Requirements](#requirements)
+- [Example](#example)
 - [Support](#support)
 - [License](#license)
+
+## Features
+
+## Requirements
+
+## Example
 
 ## Support
 
