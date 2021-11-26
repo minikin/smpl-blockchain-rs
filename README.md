@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/minikin/smpl-blockchain-rs">
-    <img src="https://i.ibb.co/VLfnJrY/github.png" alt="Blockchain in Rust" />
+    <img src="https://github.com/minikin/smpl-blockchain-rs/blob/main/assets/github.jpg?raw=true" alt="Blockchain in Rust" />
   </a>
 <h2 align="center">Naive blockchain implementation with PoW in Rust.</h2>
 </p>
