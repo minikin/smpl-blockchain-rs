@@ -4,7 +4,7 @@
   <a href="https://github.com/minikin/smpl-blockchain-rs">
     <img src="https://github.com/minikin/smpl-blockchain-rs/blob/main/assets/github.jpg?raw=true" alt="Blockchain in Rust" />
   </a>
-<h2 align="center">Naive implementation in Rust</h2>
+<h2 align="center">naive implementation</h2>
 </p>
 
 [![Licensed under either of Apache License, Version 2.0 or MIT license at your option.](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/minikin/smpl-blockchain-rs/blob/main/LICENSE-MIT)
